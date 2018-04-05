@@ -1,11 +1,11 @@
 def arms(n):
-    res = 0
-    for c in n:
-        res += int(c) ** len(n)
-        if res > int(n):
-            break
-    return res
-    # return sum([int(c) ** len(n) for c in n])
+    # res = 0
+    # for c in n:
+    #     res += int(c) ** len(n)
+    #     if res >= int(n):
+    #         break
+    # return res
+    return sum([int(c) ** len(n) for c in n])
 
 
 l = []
